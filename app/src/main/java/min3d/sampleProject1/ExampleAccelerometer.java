@@ -15,7 +15,7 @@ import min3d.parser.Parser;
 import min3d.vos.Light;
 import min3d.vos.Number3d;
 
-public class ExampleAccelerometer extends RendererActivity implements SensorEventListener {
+public class  ExampleAccelerometer extends RendererActivity implements SensorEventListener {
 	private final float FILTERING_FACTOR = .3f;
 	
 	private SkyBox mSkyBox;
