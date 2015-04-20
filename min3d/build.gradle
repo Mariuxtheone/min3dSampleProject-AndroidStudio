@@ -1,15 +1,15 @@
 apply plugin: 'android-library'
 
 android {
-    compileSdkVersion 19
-    buildToolsVersion "19.0.0"
+    compileSdkVersion 15
+    buildToolsVersion "21.0.2"
 
     buildTypes {
         debug{
 
         }
         release {
-            runProguard false
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
@@ -24,6 +24,6 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:+'
+    compile 'com.android.support:appcompat-v7:20.0.0'
     compile fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
 }
